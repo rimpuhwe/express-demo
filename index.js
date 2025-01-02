@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-app.use(express(JSON));
+app.use(express.json());
 const courses = [
     {id: 1, name: 'HTML & CSS'},
     {id: 2, name: 'JavaScript'},
